@@ -1,0 +1,111 @@
+<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Pasien</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(rs_wijaya.png);
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            background: #c4c4c4;
+            margin: 50px auto;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #13015b;
+            color: rgb(255, 252, 252);
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffffff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pendaftaran Pasien</h2>
+        <form action="proses_pendaftaran.php"method="get">
+        No Rekam Medis: <input  type="number" name="norm" />
+        <br />
+        <br />
+        Nama: <input type="text" name="nama" />
+        <br />
+        <br />
+        Alamat: <input  type="text" name="alamat" />
+        <br />
+        <br />
+        NO BPJS: <input type="tel" name="bpjs" />
+        <br />
+        <br />
+        Penanggung Jawab: <input  type="text" name="penanggung" />
+        <br />
+        <br />
+        Pemeriksaan awal: <input type="text" name="pemeriksaan" />
+        <br />
+        <br />
+        Anamnesa: <input  type="text" name="anamnesa" />
+        <br />
+        <br />
+        Pembayaran <input type="text" name="pembayaran" />
+        <br />
+        <br />
+        <input type="submit" value="Proses data" >
+    </form>
+
+        <div class="footer">
+            &copy; 2025 Sistem Pendaftaran Pasien - Rumah Sakit Wijaya
+        </div>
+    </div>
+
+</body>
+</html>
